@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:text="@string/system_name"
+        android:textColor="@color/blue"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/topview"
+        style="@style/topbar_imgview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:padding="25dp"
+        android:background="@drawable/share_top"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tckz_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_image"
+            android:drawableTop="@drawable/share_tucengkongzhi"
+            android:padding="2dp"
+            android:text="图层控制"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/share_xbqd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_image"
+            android:drawableTop="@drawable/xiaobanlist_btn"
+            android:padding="2dp"
+            android:text="小班清单"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/share_dmgl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_image"
+            android:drawableTop="@drawable/share_dm_manger"
+            android:padding="2dp"
+            android:text="地名查询"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/share_xbcx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_image"
+            android:drawableTop="@drawable/share_xiaobanchaxun"
+            android:padding="2dp"
+            android:text="小班查询"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/share_xbbj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_image"
+            android:drawableTop="@drawable/share_xiaobanbianji"
+            android:padding="2dp"
+            android:text="小班编辑"
+            android:textColor="@color/white"
+            android:textSize="8sp"/>
+
+        <TextView
+            android:id="@+id/share_gjcx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_image"
+            android:drawableTop="@drawable/share_guijichaxun"
+            android:padding="2dp"
+            android:text="轨迹查询"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/share_tcxr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_image"
+            android:drawableTop="@drawable/tucengxuanran"
+            android:padding="2dp"
+            android:text="图层渲染"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/share_zbdw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_image"
+            android:drawableTop="@drawable/share_zuobiaodingwei"
+            android:padding="2dp"
+            android:text="坐标定位"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/share_grzx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_image"
+            android:drawableTop="@drawable/share_person_center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/share_xtsz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_image"
+            android:drawableTop="@drawable/share_sys_settings"
+            android:padding="2dp"
+            android:text="系统设置"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/shuju_sjtb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_image"
+            android:drawableTop="@drawable/share_shujutongbu"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/shuxing_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_image"
+            android:drawableTop="@drawable/share_shuxingbiaozhu"
+            android:padding="2dp"
+            android:text="图层标注"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/top_addnewlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_image"
+            android:drawableTop="@drawable/add_newlayer"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/top_kongjiantongji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_image"
+            android:drawableTop="@drawable/top_kongjiantongji"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/top_addjjxx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_image"
+            android:drawableTop="@drawable/add_jjxx"
+            android:padding="2dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="5dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

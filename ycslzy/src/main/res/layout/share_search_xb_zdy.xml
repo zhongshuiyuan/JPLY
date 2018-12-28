@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_view_rounded_blue"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:text="小班自定义查询"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/close_xbsearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:background="@drawable/background_view_rounded_blue"
+            android:contentDescription="@null"
+            android:padding="2dp"
+            android:src="@drawable/ic_close_black_24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/select_spinner"
+            style="@style/spinner_style_m"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/select_char"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center"
+            android:background="@drawable/background_view_image"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="条件"
+            android:textColor="#1b85cf"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_linearlayout"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/query_edittext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_edittxt"
+            android:inputType="textMultiLine"
+            android:textColor="#1b85cf" />
+
+        <ImageView
+            android:id="@+id/char_reduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_image"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:src="@drawable/minus_sign_net" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_linearlayout"
+        android:orientation="horizontal">
+
+        <com.titan.baselibrary.customview.DropdownEdittext
+            android:id="@+id/field_edittext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#1b85cf" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_image"
+            android:paddingBottom="7dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="7dp"
+            android:text="确定"
+            android:textColor="#1b85cf"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView_result_xbsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+</LinearLayout>

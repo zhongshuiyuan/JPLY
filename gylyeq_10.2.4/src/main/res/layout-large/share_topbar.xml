@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal">
+
+    <!--    <ImageView
+            android:id="@+id/topview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/share_top"
+            android:contentDescription="@null" />-->
+
+    <FrameLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/topleft_bg"
+                android:contentDescription="@null"
+                android:paddingBottom="35dp"
+                android:paddingTop="35dp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/toptit_bg"
+                android:contentDescription="@null"
+                android:paddingBottom="35dp"
+                android:paddingTop="35dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/toparrow_bg"
+                android:contentDescription="@null"
+                android:paddingBottom="35dp"
+                android:paddingTop="35dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/system_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_5"
+            android:layout_marginTop="@dimen/padding_5"
+            android:text="@string/system_name"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/textsize_18"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/topright_bg"
+            android:contentDescription="@null"
+            android:paddingBottom="35dp"
+            android:paddingTop="35dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tckz_imageview"
+                style="@style/topbar_style_l"
+                android:drawableTop="@drawable/share_tucengkongzhi"
+                android:text="图层控制" />
+
+            <TextView
+                android:id="@+id/share_xbqd"
+                style="@style/topbar_style_l"
+                android:drawableTop="@drawable/xiaobanlist_btn"
+                android:text="小班清单" />
+
+            <TextView
+                android:id="@+id/share_dmgl"
+                style="@style/topbar_style_l"
+                android:drawableTop="@drawable/share_dm_manger"
+                android:text="地名搜索" />
+
+            <TextView
+                android:id="@+id/share_xbcx"
+                style="@style/topbar_style_l"
+                android:drawableTop="@drawable/share_xiaobanchaxun"
+                android:text="小班查询" />
+
+            <TextView
+                android:id="@+id/share_xbbj"
+                style="@style/topbar_style_l"
+                android:drawableTop="@drawable/share_xiaobanbianji"
+                android:text="小班编辑" />
+
+            <TextView
+                android:id="@+id/share_gjcx"
+                style="@style/topbar_style_l"
+                android:drawableTop="@drawable/share_guijichaxun"
+                android:text="轨迹查询" />
+
+            <TextView
+                android:id="@+id/share_tcxr"
+                style="@style/topbar_style_l"
+                android:drawableTop="@drawable/tucengxuanran"
+                android:text="图层渲染" />
+
+            <TextView
+                android:id="@+id/share_zbdw"
+                style="@style/topbar_style_l"
+                android:drawableTop="@drawable/share_zuobiaodingwei"
+                android:text="坐标定位" />
+
+            <TextView
+                android:id="@+id/share_grzx"
+                style="@style/topbar_style_l"
+                android:drawableTop="@drawable/share_person_center"
+                android:text="个人中心" />
+
+            <TextView
+                android:id="@+id/share_xtsz"
+                style="@style/topbar_style_l"
+                android:drawableTop="@drawable/share_sys_settings"
+                android:text="系统设置" />
+
+            <TextView
+                android:id="@+id/shuju_sjtb"
+                style="@style/topbar_style_l"
+                android:drawableTop="@drawable/share_shujutongbu"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/shuxing_lable"
+                style="@style/topbar_style_l"
+                android:drawableTop="@drawable/share_shuxingbiaozhu"
+                android:text="图层标注" />
+
+            <TextView
+                android:id="@+id/top_addnewlayer"
+                style="@style/topbar_style_l"
+                android:drawableTop="@drawable/add_newlayer"
+                android:text="新建图层" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

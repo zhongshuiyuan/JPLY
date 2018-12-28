@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_cemian"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_popup_cemian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_linearlayout"
+        android:orientation="vertical">
+
+        <!-- <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blue" /> -->
+
+        <Button
+            android:id="@+id/item_popupwindows_dbx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_nobgd"
+            android:padding="7dp"
+            android:text="@string/select_dbx"
+            android:textColor="#585858" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f2f2f2" />
+
+        <Button
+            android:id="@+id/item_popupwindows_zyqx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_nobgd"
+            android:padding="7dp"
+            android:text="@string/select_zyqx"
+            android:textColor="#585858" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f2f2f2" />
+
+        <Button
+            android:id="@+id/item_popupwindows_freeline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_nobgd"
+            android:padding="7dp"
+            android:text="@string/select_freeline"
+            android:textColor="#585858" />
+    </LinearLayout>
+
+</RelativeLayout>

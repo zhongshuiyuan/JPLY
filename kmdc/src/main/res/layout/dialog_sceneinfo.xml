@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_linearlayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:padding="10dp"
+            android:text="现场信息上报"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/scene_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:background="@drawable/background_view_rounded_blue"
+            android:padding="7dp"
+            android:src="@drawable/close" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_linearlayout"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:text="事件名称："
+            android:textColor="@color/color_black" />
+
+        <EditText
+            android:id="@+id/scene_sjmc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_edittxt"
+            android:entries="@array/info_type"
+            android:padding="7dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="*"
+            android:textColor="@color/red" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_linearlayout"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="1dp">
+
+        <TextView
+            android:id="@+id/scene_zp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableRight="@drawable/log_pic_logo"
+            android:minWidth="100dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:textSize="16sp"
+            android:text="照片"
+            android:textColor="@color/color_black" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/scene_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/info_type" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_linearlayout"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:text="事件描述："
+            android:textColor="@color/color_black" />
+
+
+        <EditText
+            android:id="@+id/scene_sjms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_edittxt"
+            android:padding="7dp"
+            android:textCursorDrawable="@drawable/color_cursor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_linearlayout"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:text="经度："
+            android:textColor="@color/color_black" />
+
+
+        <EditText
+            android:id="@+id/scene_lon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_edittxt"
+            android:padding="7dp"
+            android:textCursorDrawable="@drawable/color_cursor" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_linearlayout"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:text="纬度："
+            android:textColor="@color/color_black" />
+
+
+        <EditText
+            android:id="@+id/scene_lat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="7dp"
+            android:background="@drawable/background_edittxt"
+            android:textCursorDrawable="@drawable/color_cursor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_linearlayout"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:padding="5dp"
+            android:text="备注："
+            android:textColor="@color/color_black" />
+
+        <EditText
+            android:id="@+id/scene_bz"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="7dp"
+            android:background="@drawable/background_edittxt"
+            android:textCursorDrawable="@drawable/color_cursor" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_linearlayout"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/scene_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/background_view_rounded_blue"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:padding="10dp"
+            android:text="上报"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

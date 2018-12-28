@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:text="@string/system_name"
+        android:textColor="@color/blue"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@drawable/share_top"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tckz_imageview"
+            style="@style/topbar_imgview"
+            android:drawableTop="@drawable/share_tucengkongzhi"
+            android:text="图层控制" />
+
+        <TextView
+            android:id="@+id/share_xbqd"
+            style="@style/topbar_imgview"
+            android:drawableTop="@drawable/xiaobanlist_btn"
+            android:text="小班清单" />
+
+        <TextView
+            android:id="@+id/share_dmgl"
+            style="@style/topbar_imgview"
+            android:drawableTop="@drawable/share_dm_manger"
+            android:text="地名查询" />
+
+        <TextView
+            android:id="@+id/share_xbcx"
+            style="@style/topbar_imgview"
+            android:drawableTop="@drawable/share_xiaobanchaxun"
+            android:text="小班查询" />
+
+        <TextView
+            android:id="@+id/share_xbbj"
+            style="@style/topbar_imgview"
+            android:drawableTop="@drawable/share_xiaobanbianji"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/share_gjcx"
+            style="@style/topbar_imgview"
+            android:drawableTop="@drawable/share_guijichaxun"
+            android:text="轨迹查询" />
+
+        <TextView
+            android:id="@+id/share_tcxr"
+            style="@style/topbar_imgview"
+            android:drawableTop="@drawable/tucengxuanran"
+            android:text="图层渲染" />
+
+        <TextView
+            android:id="@+id/share_zbdw"
+            style="@style/topbar_imgview"
+            android:drawableTop="@drawable/share_zuobiaodingwei"
+            android:text="坐标定位" />
+
+        <TextView
+            android:id="@+id/share_grzx"
+            style="@style/topbar_imgview"
+            android:drawableTop="@drawable/share_person_center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/share_xtsz"
+            style="@style/topbar_imgview"
+            android:drawableTop="@drawable/share_sys_settings"
+            android:text="系统设置" />
+
+        <TextView
+            android:id="@+id/shuju_sjtb"
+            style="@style/topbar_imgview"
+            android:drawableTop="@drawable/share_shujutongbu"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/shuxing_lable"
+            style="@style/topbar_imgview"
+            android:drawableTop="@drawable/share_shuxingbiaozhu"
+            android:text="图层标注" />
+
+        <TextView
+            android:id="@+id/top_addnewlayer"
+            style="@style/topbar_imgview"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/add_newlayer"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/top_kongjiantongji"
+            style="@style/topbar_imgview"
+            android:drawableTop="@drawable/top_kongjiantongji"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/top_addjjxx"
+            style="@style/topbar_imgview"
+            android:drawableTop="@drawable/add_jjxx"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="5dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

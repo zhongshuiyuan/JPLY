@@ -1,0 +1,10 @@
+include ':zhjc', ':gylyeq_10.2.4', ':kmdc', ':gzcd_10.2.4'
+//include ':baselibrary'
+//include ':proj4android'
+//include ':versionupdata'
+include ':LibraryManager'
+project(':LibraryManager').projectDir = new File('../LibraryManager/')
+include ':LibraryManager:baselibrary'
+include ':LibraryManager:photopicker'
+include ':LibraryManager:proj4android'
+include ':LibraryManager:versionupdata'
